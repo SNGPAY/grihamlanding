@@ -18,10 +18,7 @@ package grihamlanding.com.tomcat.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import com.google.api.services.storage.Storage.BucketAccessControls.List;
 
 import grihamlanding.com.model.Course;
 
