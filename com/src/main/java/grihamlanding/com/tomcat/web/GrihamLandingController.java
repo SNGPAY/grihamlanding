@@ -16,6 +16,8 @@
 
 package grihamlanding.com.tomcat.web;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -38,7 +40,7 @@ public class GrihamLandingController {
 	
 	
 	@GetMapping("/search")
-	public ResponseEntity<Course[]> getSearh(@RequestParam String search) {
+	public ResponseEntity<List<Course>> getSearh(@RequestParam String search) {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);

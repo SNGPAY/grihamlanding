@@ -16,6 +16,9 @@
 
 package grihamlanding.com.tomcat.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 
@@ -27,7 +30,7 @@ public class GrihamLandingService {
 	
 
 	
-	public Course[] getSearchedCourse(){
+	public List<Course> getSearchedCourse(){
 		
 		Course course1 = new Course();
 		course1.setId("1");
@@ -45,8 +48,10 @@ public class GrihamLandingService {
 		course2.setTitle("Maintenance");
 		course2.setImage_480x270("");
 		
-		Course[] courseArray = {course1,course2};
-		return courseArray;
+		List<Course> array = new ArrayList<Course>();
+		array.add(course1);
+		array.add(course2);
+		return array;
 	}
 	
 }
