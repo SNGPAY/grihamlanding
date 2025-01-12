@@ -37,7 +37,7 @@ public class GrihamLandingController {
 
 	
 	
-	@GetMapping("/")
+	@GetMapping("/search")
 	public ResponseEntity<Course[]> getSearh(@RequestParam String search) {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
