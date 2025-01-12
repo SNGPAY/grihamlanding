@@ -1,3 +1,4 @@
-D:\EclipseWorkspace\SmartHomeLanding\com\src\main\java\grihamlanding\com\tomcat\service\HelloWorldService.java
-D:\EclipseWorkspace\SmartHomeLanding\com\src\main\java\grihamlanding\com\tomcat\SampleTomcatApplication.java
-D:\EclipseWorkspace\SmartHomeLanding\com\src\main\java\grihamlanding\com\tomcat\web\SampleController.java
+D:\EclipseWorkspace\SmartHomeLanding\com\src\main\java\grihamlanding\com\tomcat\service\GrihamLandingService.java
+D:\EclipseWorkspace\SmartHomeLanding\com\src\main\java\grihamlanding\com\tomcat\GrihamLandingApplication.java
+D:\EclipseWorkspace\SmartHomeLanding\com\src\main\java\grihamlanding\com\model\Course.java
+D:\EclipseWorkspace\SmartHomeLanding\com\src\main\java\grihamlanding\com\tomcat\web\GrihamLandingController.java

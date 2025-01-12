@@ -35,14 +35,10 @@ public class GrihamLandingController {
 	@Autowired
 	private GrihamLandingService grihamLandingService;
 
-	@RequestMapping("/")
-	@ResponseBody
-	public String helloWorld() {
-		return this.grihamLandingService.getHelloMessage();
-	}
 	
-	@GetMapping("/search")
-	public ResponseEntity<Course[]> getSearh(@RequestParam String searchedTerm) {
+	
+	@GetMapping("/")
+	public ResponseEntity<Course[]> getSearh(@RequestParam String search) {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
