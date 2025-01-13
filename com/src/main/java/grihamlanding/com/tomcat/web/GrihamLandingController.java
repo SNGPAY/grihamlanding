@@ -47,4 +47,13 @@ public class GrihamLandingController {
 	    	    	
 		return new ResponseEntity<>( grihamLandingService.getSearchedCourse(),httpHeaders, org.springframework.http.HttpStatus.OK);
 	}
+	
+	@GetMapping("/hello")
+	public ResponseEntity<String> getHello() {
+		
+		final HttpHeaders httpHeaders= new HttpHeaders();
+	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+	    	    	
+		return new ResponseEntity<>( "Hello",httpHeaders, org.springframework.http.HttpStatus.OK);
+	}
 }
