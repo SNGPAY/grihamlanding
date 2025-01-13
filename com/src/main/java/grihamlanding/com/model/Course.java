@@ -2,17 +2,19 @@ package grihamlanding.com.model;
 
 public class Course {
 
-	private String id;
+	private Integer id;
 	private String title;
 	private String subtitle;
 	private String image_480x270;
+	private boolean is_paid;
 	private String price;
 	private String num_reviews;
 	
-	public String getId() {
+	
+	public Integer getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getTitle() {
@@ -44,6 +46,12 @@ public class Course {
 	}
 	public void setNum_reviews(String num_reviews) {
 		this.num_reviews = num_reviews;
+	}
+	public boolean isIs_paid() {
+		return is_paid;
+	}
+	public void setIs_paid(boolean is_paid) {
+		this.is_paid = is_paid;
 	}
 	
 	

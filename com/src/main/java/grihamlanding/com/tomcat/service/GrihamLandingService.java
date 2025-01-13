@@ -33,24 +33,28 @@ public class GrihamLandingService {
 	public List<Course> getSearchedCourse(){
 		
 		Course course1 = new Course();
-		course1.setId("1");
+		course1.setId(1);
 		course1.setNum_reviews("10");
 		course1.setPrice("10");
 		course1.setSubtitle("Title1");
 		course1.setTitle("Payment");
 		course1.setImage_480x270("");
+		course1.setIs_paid(true);
 		
 		Course course2 = new Course();
-		course2.setId("2");
+		course2.setId(2);
 		course2.setNum_reviews("100");
 		course2.setPrice("100");
 		course2.setSubtitle("Title2");
 		course2.setTitle("Maintenance");
 		course2.setImage_480x270("");
+		course2.setIs_paid(true);
 		
 		List<Course> array = new ArrayList<Course>();
 		array.add(course1);
 		array.add(course2);
+		System.out.println(array);
+		
 		return array;
 	}
 	
