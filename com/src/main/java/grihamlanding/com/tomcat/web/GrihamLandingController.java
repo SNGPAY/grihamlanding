@@ -54,6 +54,6 @@ public class GrihamLandingController {
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    	    	
-		return new ResponseEntity<>( "Hello",httpHeaders, org.springframework.http.HttpStatus.OK);
+		return new ResponseEntity<>( "Helloooo",httpHeaders, org.springframework.http.HttpStatus.OK);
 	}
 }
