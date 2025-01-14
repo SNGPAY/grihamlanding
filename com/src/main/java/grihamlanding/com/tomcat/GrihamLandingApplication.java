@@ -24,10 +24,24 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
+@CrossOrigin(
+	    origins = {
+	        "*"
+	        
+	        },
+	    methods = {
+	                RequestMethod.OPTIONS,
+	                RequestMethod.GET,
+	                RequestMethod.PUT,
+	                RequestMethod.DELETE,
+	                RequestMethod.POST
+	})
 public class GrihamLandingApplication {
 
 	private static Log logger = LogFactory.getLog(GrihamLandingApplication.class);

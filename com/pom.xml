@@ -13,7 +13,7 @@
 	<groupId>SampleAnalysis</groupId>
 	<name>Spring Boot Simple Sample</name>
 	<description>Spring Boot Simple Sample</description>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.21-SNAPSHOT</version>
 	<url>http://projects.spring.io/spring-boot/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
