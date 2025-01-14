@@ -51,22 +51,22 @@ public class GrihamLandingService {
 		course2.setIs_paid(true);
 		
 		Course course3 = new Course();
-		course2.setId(3);
-		course2.setNum_reviews("");
-		course2.setPrice("");
-		course2.setSubtitle("Title 3");
-		course2.setTitle("Notice 3");
-		course2.setImage_480x270("");
-		course2.setIs_paid(true);
+		course3.setId(3);
+		course3.setNum_reviews("");
+		course3.setPrice("");
+		course3.setSubtitle("Title 3");
+		course3.setTitle("Notice 3");
+		course3.setImage_480x270("");
+		course3.setIs_paid(true);
 		
 		Course course4 = new Course();
-		course2.setId(4);
-		course2.setNum_reviews("");
-		course2.setPrice("");
-		course2.setSubtitle("Title 4");
-		course2.setTitle("Notice 4");
-		course2.setImage_480x270("");
-		course2.setIs_paid(true);
+		course4.setId(4);
+		course4.setNum_reviews("");
+		course4.setPrice("");
+		course4.setSubtitle("Title 4");
+		course4.setTitle("Notice 4");
+		course4.setImage_480x270("");
+		course4.setIs_paid(true);
 		
 		List<Course> array = new ArrayList<Course>();
 		array.add(course1);
