@@ -34,25 +34,45 @@ public class GrihamLandingService {
 		
 		Course course1 = new Course();
 		course1.setId(1);
-		course1.setNum_reviews("10");
-		course1.setPrice("10");
+		course1.setNum_reviews("");
+		course1.setPrice("");
 		course1.setSubtitle("Title1");
-		course1.setTitle("Payment");
+		course1.setTitle("Notice 1");
 		course1.setImage_480x270("");
 		course1.setIs_paid(true);
 		
 		Course course2 = new Course();
 		course2.setId(2);
-		course2.setNum_reviews("100");
-		course2.setPrice("100");
+		course2.setNum_reviews("");
+		course2.setPrice("");
 		course2.setSubtitle("Title2");
-		course2.setTitle("Maintenance");
+		course2.setTitle("Notice 2");
+		course2.setImage_480x270("");
+		course2.setIs_paid(true);
+		
+		Course course3 = new Course();
+		course2.setId(3);
+		course2.setNum_reviews("");
+		course2.setPrice("");
+		course2.setSubtitle("Title 3");
+		course2.setTitle("Notice 3");
+		course2.setImage_480x270("");
+		course2.setIs_paid(true);
+		
+		Course course4 = new Course();
+		course2.setId(4);
+		course2.setNum_reviews("");
+		course2.setPrice("");
+		course2.setSubtitle("Title 4");
+		course2.setTitle("Notice 4");
 		course2.setImage_480x270("");
 		course2.setIs_paid(true);
 		
 		List<Course> array = new ArrayList<Course>();
 		array.add(course1);
 		array.add(course2);
+		array.add(course3);
+		array.add(course4);
 		System.out.println(array);
 		
 		return array;
