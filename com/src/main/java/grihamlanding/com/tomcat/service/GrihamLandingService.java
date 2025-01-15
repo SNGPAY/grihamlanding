@@ -78,4 +78,20 @@ public class GrihamLandingService {
 		return array;
 	}
 	
+	public Course getPayment(){
+		
+		Course course1 = new Course();
+		course1.setId(1);
+		course1.setNum_reviews("");
+		course1.setPrice("");
+		course1.setSubtitle("Title1");
+		course1.setTitle("Notice 1");
+		course1.setImage_480x270("");
+		course1.setIs_paid(true);
+		
+		
+		
+		return course1;
+	}
+	
 }

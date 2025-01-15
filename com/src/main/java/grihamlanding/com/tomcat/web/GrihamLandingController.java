@@ -54,12 +54,21 @@ public class GrihamLandingController {
 	
 	
 	@GetMapping("/search")
-	public ResponseEntity<List<Course>> getSearh(@RequestParam String search) {
+	public ResponseEntity<List<Course>> getSearch(@RequestParam String search) {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    	    	
 		return new ResponseEntity<>( grihamLandingService.getSearchedCourse(),httpHeaders, org.springframework.http.HttpStatus.OK);
+	}
+	
+	@GetMapping("/payment")
+	public ResponseEntity<Course> getPayment(@RequestParam String id) {
+		
+		final HttpHeaders httpHeaders= new HttpHeaders();
+	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+	    	    	
+		return new ResponseEntity<>( grihamLandingService.getPayment(),httpHeaders, org.springframework.http.HttpStatus.OK);
 	}
 	
 	@GetMapping("/hello")
