@@ -23,6 +23,9 @@ import org.springframework.stereotype.Component;
 
 
 import grihamlanding.com.model.Course;
+import grihamlanding.com.model.Instructor;
+import grihamlanding.com.model.Locale;
+import grihamlanding.com.model.PaymentReq;
 
 @Component
 public class GrihamLandingService {
@@ -78,20 +81,37 @@ public class GrihamLandingService {
 		return array;
 	}
 	
-	public Course getPayment(){
+	public PaymentReq getPayment(){
 		
-		Course course1 = new Course();
-		course1.setId(1);
-		course1.setNum_reviews("");
-		course1.setPrice("");
-		course1.setSubtitle("Title1");
-		course1.setTitle("Notice 1");
-		course1.setImage_480x270("");
-		course1.setIs_paid(true);
+		PaymentReq course = new PaymentReq();
+		course.setId(1);
+		course.setImage_125_H("");
+		course.setImage_240x13("");
+		course.setImage_240x135("");
+		course.setImage_480x270("");
+		course.setIs_paid(false);
+		course.setIs_practise_test_course(false);
+		Locale locale = new Locale();
+		locale.setEnglish_title("TTTTT");
+		locale.setSimple_english_title("T");
+		locale.setTitle("RR");
+		course.setLocale(locale);
+		course.setNum_reviews("1");
+		course.setPrice("100000");
+		course.setPublished_title("Due");
+		course.setResult("1");
+		course.setSubtitle("T");
+		course.setTitle("RRRRR");
+		course.setTracking_id("1111111111111111111");
 		
-		
-		
-		return course1;
+		Instructor instructor = new Instructor();
+		instructor.setId(1);
+		instructor.setTitle("A");
+		Instructor[] instructors =  {
+				instructor
+	        };
+		course.setVisible_instructors(instructors);
+		return course;
 	}
 	
 }
