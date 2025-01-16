@@ -134,7 +134,7 @@ public class GrihamLandingService {
 		//no check
 		curriculumItem1.setContent_summary("RR");
 		curriculumItem1.setDescription("");
-		curriculumItem1.setId(123);
+		curriculumItem1.setId(124);
 		curriculumItem1.setIs_free(true);
 		curriculumItem1.setTitle("Title");
 		curriculumItem1.setSort_order(2);
