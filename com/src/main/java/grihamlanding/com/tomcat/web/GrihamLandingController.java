@@ -79,7 +79,7 @@ public class GrihamLandingController {
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    	    	
-		return new ResponseEntity<>( grihamLandingService.getPayment(),httpHeaders, org.springframework.http.HttpStatus.OK);
+		return new ResponseEntity<>( grihamLandingService.getCurriculum(),httpHeaders, org.springframework.http.HttpStatus.OK);
 	}
 	
 	@GetMapping("/hello")
