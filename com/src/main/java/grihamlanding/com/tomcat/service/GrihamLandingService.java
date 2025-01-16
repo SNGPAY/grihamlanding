@@ -118,7 +118,8 @@ public class GrihamLandingService {
 	public CurriculumItem getCurriculum() {
 		
 		CurriculumItem curriculumItem = new CurriculumItem();
-		curriculumItem.set_class("XI");
+		curriculumItem.set_class("XI") ;
+		//no check
 		curriculumItem.setContent_summary("RR");
 		curriculumItem.setDescription("");
 		curriculumItem.setId(123);
