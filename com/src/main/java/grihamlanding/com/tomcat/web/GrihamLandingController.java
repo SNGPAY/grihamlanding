@@ -73,7 +73,7 @@ public class GrihamLandingController {
 		return new ResponseEntity<>( grihamLandingService.getPayment(),httpHeaders, org.springframework.http.HttpStatus.OK);
 	}
 	
-	@GetMapping("/payment")
+	@GetMapping("/curriculum")
 	public ResponseEntity<CurriculumItem> getReview() {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
