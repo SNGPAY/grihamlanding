@@ -74,7 +74,7 @@ public class GrihamLandingController {
 	}
 	
 	@GetMapping("/curriculum")
-	public ResponseEntity<CurriculumItem> getReview() {
+	public ResponseEntity<List<CurriculumItem>> getReview() {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);

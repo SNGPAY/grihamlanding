@@ -115,7 +115,9 @@ public class GrihamLandingService {
 		return course;
 	}
 	
-	public CurriculumItem getCurriculum() {
+	public ArrayList< CurriculumItem> getCurriculum() {
+		
+		ArrayList< CurriculumItem> arrayList = new ArrayList<CurriculumItem>();	
 		
 		CurriculumItem curriculumItem = new CurriculumItem();
 		curriculumItem.set_class("XI") ;
@@ -127,6 +129,17 @@ public class GrihamLandingService {
 		curriculumItem.setTitle("Title");
 		curriculumItem.setSort_order(2);
 		
-		return curriculumItem;
+		CurriculumItem curriculumItem1 = new CurriculumItem();
+		curriculumItem1.set_class("XI") ;
+		//no check
+		curriculumItem1.setContent_summary("RR");
+		curriculumItem1.setDescription("");
+		curriculumItem1.setId(123);
+		curriculumItem1.setIs_free(true);
+		curriculumItem1.setTitle("Title");
+		curriculumItem1.setSort_order(2);
+		arrayList.add(curriculumItem1);
+		arrayList.add(curriculumItem);
+		return arrayList;
 	}
 }
