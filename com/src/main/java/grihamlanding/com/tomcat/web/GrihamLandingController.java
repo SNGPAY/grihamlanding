@@ -31,6 +31,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import grihamlanding.com.model.Course;
+import grihamlanding.com.model.CurriculumItem;
 import grihamlanding.com.model.PaymentReq;
 import grihamlanding.com.tomcat.service.GrihamLandingService;
 
@@ -65,6 +66,15 @@ public class GrihamLandingController {
 	
 	@GetMapping("/payment")
 	public ResponseEntity<PaymentReq> getPayment(@RequestParam String id) {
+		
+		final HttpHeaders httpHeaders= new HttpHeaders();
+	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+	    	    	
+		return new ResponseEntity<>( grihamLandingService.getPayment(),httpHeaders, org.springframework.http.HttpStatus.OK);
+	}
+	
+	@GetMapping("/payment")
+	public ResponseEntity<CurriculumItem> getReview() {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);

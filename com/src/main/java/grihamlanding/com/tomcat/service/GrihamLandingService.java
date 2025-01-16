@@ -23,6 +23,7 @@ import org.springframework.stereotype.Component;
 
 
 import grihamlanding.com.model.Course;
+import grihamlanding.com.model.CurriculumItem;
 import grihamlanding.com.model.Instructor;
 import grihamlanding.com.model.Locale;
 import grihamlanding.com.model.PaymentReq;
@@ -114,4 +115,17 @@ public class GrihamLandingService {
 		return course;
 	}
 	
+	public CurriculumItem getCurriculum() {
+		
+		CurriculumItem curriculumItem = new CurriculumItem();
+		curriculumItem.set_class("XI");
+		curriculumItem.setContent_summary("RR");
+		curriculumItem.setDescription("");
+		curriculumItem.setId(123);
+		curriculumItem.setIs_free(true);
+		curriculumItem.setTitle("Title");
+		curriculumItem.setSort_order(2);
+		
+		return curriculumItem;
+	}
 }
