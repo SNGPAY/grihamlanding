@@ -32,6 +32,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import grihamlanding.com.model.Course;
 import grihamlanding.com.model.CurriculumItem;
+import grihamlanding.com.model.PaymentHistory;
 import grihamlanding.com.model.PaymentReq;
 import grihamlanding.com.tomcat.service.GrihamLandingService;
 
@@ -80,6 +81,15 @@ public class GrihamLandingController {
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    	    	
 		return new ResponseEntity<>( grihamLandingService.getCurriculum(),httpHeaders, org.springframework.http.HttpStatus.OK);
+	}
+	
+	@GetMapping("/paymenthistory")
+	public ResponseEntity<List<PaymentHistory>> getPaymentHistory(@RequestParam String id) {
+		
+		final HttpHeaders httpHeaders= new HttpHeaders();
+	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+	    	    	
+		return new ResponseEntity<>( grihamLandingService.getPaymentHistory(id),httpHeaders, org.springframework.http.HttpStatus.OK);
 	}
 	
 	@GetMapping("/hello")

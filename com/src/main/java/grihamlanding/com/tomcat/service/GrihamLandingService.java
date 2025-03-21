@@ -26,6 +26,7 @@ import grihamlanding.com.model.Course;
 import grihamlanding.com.model.CurriculumItem;
 import grihamlanding.com.model.Instructor;
 import grihamlanding.com.model.Locale;
+import grihamlanding.com.model.PaymentHistory;
 import grihamlanding.com.model.PaymentReq;
 
 @Component
@@ -142,4 +143,25 @@ public class GrihamLandingService {
 		arrayList.add(curriculumItem);
 		return arrayList;
 	}
+	
+	public List<PaymentHistory> getPaymentHistory(String customerId){
+		
+		PaymentHistory paymentHistory1 = new PaymentHistory();
+		paymentHistory1.setAmount("102.56");
+		paymentHistory1.setDescription("Maintenance for month Jan 2025");
+		paymentHistory1.setDate("02-Jan-2025");
+		paymentHistory1.setStatus("Success");
+		
+		PaymentHistory paymentHistory2 = new PaymentHistory();
+		paymentHistory2.setAmount("100.00");
+		paymentHistory2.setDescription("Maintenance for Plumbing on Jan 2025");
+		paymentHistory2.setDate("23-Jan-2025");
+		paymentHistory2.setStatus("Success");
+		
+		List<PaymentHistory> histories = new ArrayList<PaymentHistory>();
+		histories.add(paymentHistory2);
+		histories.add(paymentHistory1);
+		return histories;
+	}
+	
 }
