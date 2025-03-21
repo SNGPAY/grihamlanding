@@ -151,12 +151,14 @@ public class GrihamLandingService {
 		paymentHistory1.setDescription("Maintenance for month Jan 2025");
 		paymentHistory1.setDate("02-Jan-2025");
 		paymentHistory1.setStatus("Success");
+		paymentHistory1.setTransactionid("#SDFDS34342421522");
 		
 		PaymentHistory paymentHistory2 = new PaymentHistory();
 		paymentHistory2.setAmount("100.00");
 		paymentHistory2.setDescription("Maintenance for Plumbing on Jan 2025");
 		paymentHistory2.setDate("23-Jan-2025");
 		paymentHistory2.setStatus("Success");
+		paymentHistory2.setTransactionid("#SDFDS34342421524");
 		
 		List<PaymentHistory> histories = new ArrayList<PaymentHistory>();
 		histories.add(paymentHistory2);

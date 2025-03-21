@@ -6,6 +6,7 @@ public class PaymentHistory {
 	private String date;
 	private String amount;
 	private String description;
+	private String transactionid;
 	
 	public String getStatus() {
 		return status;
@@ -30,6 +31,12 @@ public class PaymentHistory {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	public String getTransactionid() {
+		return transactionid;
+	}
+	public void setTransactionid(String transactionid) {
+		this.transactionid = transactionid;
 	}
 	
 	
