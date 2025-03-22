@@ -144,7 +144,9 @@ public class GrihamLandingService {
 		return arrayList;
 	}
 	
-	public List<PaymentHistory> getPaymentHistory(String customerId){
+	public Course getPaymentHistory(String customerId){
+		
+		Course course = new Course();
 		
 		PaymentHistory paymentHistory1 = new PaymentHistory();
 		paymentHistory1.setAmount("102.56");
@@ -163,7 +165,9 @@ public class GrihamLandingService {
 		List<PaymentHistory> histories = new ArrayList<PaymentHistory>();
 		histories.add(paymentHistory2);
 		histories.add(paymentHistory1);
-		return histories;
+		
+		course.setResult(histories);
+		return course;
 	}
 	
 }

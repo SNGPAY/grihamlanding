@@ -9,6 +9,7 @@ public class Course {
 	private boolean is_paid;
 	private String price;
 	private String num_reviews;
+	private Object result;
 	
 	
 	public Integer getId() {
@@ -52,6 +53,12 @@ public class Course {
 	}
 	public void setIs_paid(boolean is_paid) {
 		this.is_paid = is_paid;
+	}
+	public Object getResult() {
+		return result;
+	}
+	public void setResult(Object result) {
+		this.result = result;
 	}
 	
 	

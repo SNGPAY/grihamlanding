@@ -84,7 +84,7 @@ public class GrihamLandingController {
 	}
 	
 	@GetMapping("/paymenthistory")
-	public ResponseEntity<List<PaymentHistory>> getPaymentHistory(@RequestParam String id) {
+	public ResponseEntity<Course> getPaymentHistory(@RequestParam String id) {
 		
 		final HttpHeaders httpHeaders= new HttpHeaders();
 	    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
