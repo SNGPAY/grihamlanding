@@ -159,7 +159,7 @@ public class GrihamLandingService {
 		paymentHistory2.setAmount("100.00");
 		paymentHistory2.setDescription("Maintenance for Plumbing on Jan 2025");
 		paymentHistory2.setDate("23-Jan-2025");
-		paymentHistory2.setStatus("Success");
+		paymentHistory2.setStatus("Fail");
 		paymentHistory2.setTransactionid("#SDFDS34342421524");
 		
 		List<PaymentHistory> histories = new ArrayList<PaymentHistory>();
